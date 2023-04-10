@@ -1,5 +1,156 @@
 # Changelog
 
+## 14.2.0
+###### Release Date: 03-04-2023
+### Help Center Enhancements to Support Multilevel Collections
+
+* Help Center home screen and collections screen have been redesigned to support navigating through collections and nested collections up to 3 level deep
+* The Intercom.client.fetchCollection API response body now includes a list of `collections` within the collection response body. `sections` will be deprecated in the next major release.
+
+### 🐛 Bug Fixes
+* Fixed an issue that caused a crash when opening the Help Centre
+* Fixed a crash with displaying full chat notifications
+* Fixed the issue where it reloads the app after viewing in-app notifications
+
+## 14.1.0
+###### Release Date: 13-03-2023
+### Enhancements: Attach Files to Tickets
+* End users can now upload files when submitting Tickets in the Messenger
+
+👉 Upgrade to the latest version of the mobile SDK today to use the feature on mobile.
+
+## 14.0.6
+###### Release Date: 02-03-2023
+* Fixed an issue where messenger crashes when a conversation with an attribute collector is loaded.
+
+## 14.0.5
+###### Release Date: 10-02-2023
+* Fixed an issue that caused a Survey to be triggered twice
+* Fixed an issue that caused a crash when opening in-app notifications
+* Updated dependencies to newer versions:
+  * Updated Compose to 1.3.3
+  * Updated AppCompat to 1.6.1
+
+## 14.0.4
+###### Release Date: 19-12-2022
+* Added support for Bengali, Persian, Malay and Thai
+* Fixed the issue where quick replies re-open closed conversations with composer disabled
+* Fixed the crash with missing drawable resources
+* Fixed the crash when sending an image
+* Fixed the issue with uploading image from Typeform app
+* Fixed the bug where attachments disappearing in conversation view
+
+## 14.0.3
+###### Release Date: 28-11-2022
+### 🐛 Bug Fixes
+* Made some UI improvements.
+* Minor bug fixes
+
+## 14.0.2
+###### Release Date: 22-11-2022
+### 🐛 Bug Fixes
+* Made some UI improvements.
+* Minor bug fixes
+
+## 14.0.1
+###### Release Date: 16-11-2022
+### 🐛 Bug Fixes
+* Made some UI improvements.
+
+### 🚀 Enhancements
+* Added the ability to automatically show a Survey when it is set live.
+
+## 14.0.0
+###### Release Date: 04-11-2022
+
+### 🚀 Enhancements
+
+**In v14.0.0 of the Intercom mobile SDK!! Say hello to the most customizable Messenger. Ever. 👋**
+
+**📱 New feature: Messenger**
+
+👋🏼  Introducing the fully customizable Messenger that provides customers with in-context engagement throughout their journey.
+
+* **Customization** Now you can update and style your Messenger just the way you want it and enable a consistent brand experience with a fully customizable Messenger. [Learn more and get started here.](https://www.intercom.com/help/en/articles/6612589-set-up-the-fully-customizable-messenger)
+
+
+![Image](https://user-images.githubusercontent.com/101131135/199487389-9100911a-192d-4b02-a1b4-232d22769408.jpeg)
+
+
+
+
+* **Spaces** You’ll have increased product flexibility and versatility with Messenger ‘spaces’ that provide intuitive navigation for your customers. Let’s go through each of the 3 new spaces you can add to your Messenger.
+
+* **Home Space** A redesigned Home screen that’s highly configurable and supports multiple use cases with new capabilities.
+
+
+* **Messages Space** Messages is a dedicated space for conversation management. Both inbound and outbound conversations and conversations which contain [tickets](https://www.intercom.com/help/en/articles/6436600-tickets-explained) will live here.
+
+
+* **Help Space** Enable customers to better self-serve with a more intuitive and personalized support experience. Customers can access a full, in-context help center from anywhere in your product with the dedicated Help Space.
+
+
+**📱 New feature: Tickets**
+
+Go beyond simple live chat – handle complex customer requests asynchronously.
+
+* As you scale, so does your conversation volume and not every customer request can be handled in a live chat. That’s where tickets come in.
+* Let customers submit tickets directly from your app for async resolution
+
+
+
+[Learn more about Intercom Messenger](https://www.intercom.com/messenger)
+
+[Learn more about Intercom Tickets](https://www.intercom.com/help/en/articles/6436600-tickets-explained)
+
+👉  Upgrade to the latest version of the mobile SDK today to use the feature on mobile.
+
+As this is a major update, there are few API changes which are listed below:
+
+| Method | Description |
+| ----------- | ----------- |
+| fun present(space: IntercomSpace)    | Open a specific space in intercom. (Home, Messages, HelpCenter)       |
+| fun present()   | Open Intercom - defaults to the Home space        |
+| fun presentContent(content: IntercomContent) | Present Intercom content. Valid content types are Article, Carousel, HelpCenter Collections |
+
+[You can find more information about migrating to v14.0.0 here](https://developers.intercom.com/installing-intercom/docs/migrating-to-14-0-0-android)
+
+## 12.5.3
+###### Release Date: 17-10-2022
+* Added support for Android 13 gallery permission
+* Fixed a bug when sending metrics
+
+## 12.5.2
+###### Release Date: 11-10-2022
+* Added support for Android 13 gallery permission
+
+## 12.5.1
+###### Release Date: 12-09-2022
+* Bumped Android Compose version to 1.2.1
+
+## 12.5.0
+###### Release Date: 19-8-2022
+* Added support for Android 13
+
+## 12.4.3
+###### Release Date: 28-7-2022
+* Fixed a bug where the background colour was using default theme colour in Surveys
+* Fixed issue where the content overlaps the header in launcher.
+
+## 12.4.2
+###### Release Date: 22-6-2022
+* Fixed a bug that showed the wrong labels under Numeric scale questions in Surveys
+* Fixed crash caused due to bad JSON
+* Fixed bug that prevented push notification body from expanding
+
+## 12.4.1
+###### Release Date: 01-6-2022
+* Fixed an issue where server region did not default to US when no meta-data was provided in the manifest
+
+## 12.4.0
+###### Release Date: 27-5-2022
+* You can now customize submit button text for surveys sent on your mobile app
+
 ## 12.3.0
 ###### Release Date: 17-5-2022
 📱 New Feature : Rich Push Messages 🖼️  
